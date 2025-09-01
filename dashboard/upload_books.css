@@ -1,0 +1,95 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f1117;
+    color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Centering wrapper */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;  /* Leaves space for header */
+    padding-bottom: 40px;
+}
+
+/* Glassy form */
+form {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(200, 200, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 0 10px rgba(180, 255, 255, 0.05);
+    padding: 35px 30px;
+    border-radius: 14px;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Heading */
+form h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #b8e3ff;
+}
+
+/* Labels */
+label {
+    font-weight: 500;
+    color: #ccddee;
+    margin-top: 6px;
+}
+
+/* Input, Select */
+input[type="text"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(180, 220, 255, 0.2);
+    border-radius: 6px;
+    color: #e0f0ff;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus {
+    border-color: #60c4ff;
+}
+
+/* Button */
+button {
+    background-color: #1f6fb2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2980c8;
+    transform: translateY(-2px);
+}

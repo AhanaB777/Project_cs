@@ -1,0 +1,136 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #0f111a;
+    color: #e0e0e0;
+    padding: 40px 20px;
+    min-height: 100vh;
+    backdrop-filter: blur(8px);
+    background-image: linear-gradient(135deg, #0f111a, #1a1d2e);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00e6e6;
+    margin-bottom: 40px;
+    text-shadow: 0 0 10px rgba(0, 230, 230, 0.4);
+}
+
+/* Table Styling */
+table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 230, 230, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background: rgba(0, 230, 230, 0.1);
+    color: #00f7ff;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(0, 230, 230, 0.3);
+}
+
+tr:hover {
+    background-color: rgba(0, 230, 230, 0.08);
+}
+
+/* Action Buttons */
+.action-btn {
+    padding: 8px 14px;
+    margin: 2px 4px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: none;
+}
+
+.delete-btn {
+    background-color: rgba(255, 82, 82, 0.15);
+    color: #ff4d4d;
+    border: 1px solid #ff4d4d;
+}
+
+.delete-btn:hover {
+    background-color: #ff4d4d;
+    color: white;
+    transform: scale(1.05);
+}
+
+.restore-btn {
+    background-color: rgba(0, 230, 100, 0.15);
+    color: #00e676;
+    border: 1px solid #00e676;
+}
+
+.restore-btn:hover {
+    background-color: #00e676;
+    color: white;
+    transform: scale(1.05);
+}
+
+.permdelete-btn {
+    background-color: rgba(255, 0, 102, 0.15);
+    color: #ff0066;
+    border: 1px solid #ff0066;
+}
+
+.permdelete-btn:hover {
+    background-color: #ff0066;
+    color: white;
+    transform: scale(1.05);
+}
+
+.edit-btn {
+    background-color: rgba(0, 153, 255, 0.15);
+    color: #3399ff;
+    border: 1px solid #3399ff;
+}
+
+.edit-btn:hover {
+    background-color: #3399ff;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+
+    .action-btn {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

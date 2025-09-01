@@ -1,0 +1,192 @@
+/* ======== GLOBAL STYLING & ANIMATION BASE ======== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 40px 20px;
+    background-attachment: fixed;
+    background-size: cover;
+    animation: fadeInBody 1.5s ease-in-out;  /* Smoother fade-in */
+}
+
+@keyframes fadeInBody {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== HEADING WITH GLOW AND CENTERING ======== */
+
+h1 {
+    font-size: 2.5rem; /* Adjusted size for balance */
+    text-align: center;
+    padding: 20px 30px; /* Padding for better fit */
+    border-radius: 12px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+    animation: fadeInDown 1.5s ease-out, glowEffect 3s ease-in-out infinite;
+    border: 1px solid rgba(0, 255, 255, 0.2); /* Subtle border for the box */
+    width: fit-content; /* Makes sure the box fits content */
+    margin: 0 auto 20px; /* Centers the heading and keeps space below */
+    display: block; /* Ensures it stays a block-level element */
+}
+
+/* Fade-in animation */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glowing effect animation */
+@keyframes glowEffect {
+    0% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.6), 0 0 60px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.4), 0 0 30px rgba(0, 255, 255, 0.3);
+    }
+}
+
+/* ======== FILTER TOGGLE BUTTON ======== */
+
+#filter-toggle {
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid #00ffff;
+    color: #00ffff;
+    padding: 12px 25px;
+    cursor: pointer;
+    margin: 0 auto 20px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.4s ease-out;  /* Smoother hover effect */
+    font-size: 1rem;
+    animation: fadeInUp 1.5s ease-out;  /* Smoother fade-in */
+}
+
+#filter-toggle:hover {
+    background: rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff; /* Enhanced glow effect */
+}
+
+/* ======== TABLE ======== */
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.15);  /* Soft glow */
+    animation: fadeInTable 1.5s ease-in-out;  /* Smoother fade-in */
+}
+
+@keyframes fadeInTable {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+th, td {
+    padding: 16px 20px;
+    text-align: center;
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+th {
+    background-color: rgba(0, 255, 255, 0.2);
+    color: #00ffff;
+    font-size: 1rem;
+}
+
+td a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease-out;  /* Smooth color transition */
+}
+
+td a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+tr {
+    animation: slideUp 1s ease-in-out;  /* Smoother slide-up */
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== ACTIONS COLUMN ======== */
+
+.actions a {
+    background: rgba(255, 0, 0, 0.2);
+    color: #ff4d4d;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s ease-out;  /* Smooth transition */
+}
+
+.actions a:hover {
+    background: rgba(255, 0, 0, 0.3);
+    box-shadow: 0 0 15px #ff4d4d;  /* Soft glow */
+}
+
+/* ======== EXTRA BUTTONS ======== */
+
+.btn {
+    display: inline-block;
+    background-color: #00ffff;
+    color: #fff; /* Text color changed to white */
+    padding: 12px 25px;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.4s ease-out;  /* Smoother hover effect */
+    animation: fadeInUp 1.5s ease-out;  /* Smoother fade-in */
+    font-size: 1rem;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #00cccc;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff; /* Enhanced glow effect */
+}
+
+/* ======== ANIMATION KEYFRAMES ======== */
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======== FOOTER BUTTONS (Centered) ======== */
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 25px;
+}
+
+.footer-buttons .btn {
+    width: auto;
+}

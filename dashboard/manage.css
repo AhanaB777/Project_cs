@@ -1,0 +1,166 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #e0e0e0;
+}
+
+/* Page Title */
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 24px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    width: 95%;
+    max-width: 750px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.15);
+    font-size: 16px;
+}
+
+td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Buttons */
+button, a {
+    padding: 12px 18px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    display: inline-block;
+}
+
+/* Restore Button */
+.restore-btn {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3);
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    text-align: center;
+}
+
+.restore-btn:hover {
+    background: linear-gradient(135deg, #1e7e34, #155d27);
+    box-shadow: 0px 6px 15px rgba(40, 167, 69, 0.5);
+}
+
+/* Back Button */
+.back-btn {
+    background: linear-gradient(135deg, #ff5722, #e64a19);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+    background: linear-gradient(135deg, #e64a19, #bf360c);
+    box-shadow: 0 6px 15px rgba(255, 87, 34, 0.5);
+}
+
+/* Upload & Manage Buttons - Dark & Stylish */
+.upload-manage-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+} 
+/*Upload & Manage Buttons - Dark & Stylish */
+.upload-manage-container {
+    display: flex;
+    justify-content: center; /* Center align */
+    gap: 15px; /* Space between buttons */
+    margin-top: 15px;
+}
+
+.upload-btn, .manage-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+    min-width: 180px; /* Ensuring buttons are of the same size */
+}
+
+/* Upload Button - Neon Blue */
+.upload-btn {
+    background: linear-gradient(135deg, #0056b3, #003d82);
+    color: #e0e0e0;
+}
+
+.upload-btn:hover {
+    background: linear-gradient(135deg, #003d82, #002960);
+    box-shadow: 0px 4px 12px rgba(0, 86, 179, 0.5);
+}
+
+/* Manage Button - Dark Red */
+.manage-btn {
+    background: linear-gradient(135deg, #8b0000, #5a0000);
+    color: #e0e0e0;
+}
+
+.manage-btn:hover {
+    background: linear-gradient(135deg, #5a0000, #3a0000);
+    box-shadow: 0px 4px 12px rgba(139, 0, 0, 0.5);
+}

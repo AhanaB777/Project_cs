@@ -1,0 +1,130 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0f1117;
+    color: #e0e0e0;
+    padding: 30px 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #c2e9fb;
+    text-shadow: 0 0 6px rgba(0, 255, 255, 0.1);
+    font-weight: bold;
+}
+
+/* Container */
+.faculty-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Slider */
+.faculty-slider {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    white-space: nowrap;
+}
+
+.faculty-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card */
+.faculty-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 20px;
+    min-width: 340px;
+    flex: 0 0 auto;
+    color: #e3e3e3;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 255, 255, 0.03);
+}
+
+.faculty-card:hover {
+    transform: scale(1.03);
+}
+
+/* Image */
+.faculty-card img {
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #3fa9f5;
+    margin-bottom: 15px;
+}
+
+/* Name */
+.faculty-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Labels */
+.faculty-card .label {
+    color: #9ec1e2;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+/* Description */
+.faculty-card p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #d3d7e0;
+}
+
+/* Navigation Buttons */
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.08);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    color: #dce7f3;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.left-btn {
+    left: -10px;
+}
+
+.right-btn {
+    right: -10px;
+}
+
+.slide-btn:hover {
+    background-color: #1a2a40;
+    color: #fff;
+}
